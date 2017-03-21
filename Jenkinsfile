@@ -4,15 +4,21 @@ pipeline {
   }
   stages {
     stage('provisioning') {
-      echo 'provisioning'
+      steps {
+        echo 'provisioning'
+      }
     }
 
     stage('building') {
-      echo 'building'
+      steps {
+        echo 'building'
+      }
     }
     
     stage('testing') {
-      echo 'testing'
+      steps {
+        echo 'testing'
+      }
     }
   }
 }
